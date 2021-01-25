@@ -1,0 +1,140 @@
+.main > * + * {
+    margin-top: 2em;
+}
+
+.main .about_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 2em 3em;
+    margin: 2em 0;
+
+    .profile_img {
+        height: 25em;
+        width: 25em;
+        min-width: 20em;
+
+        > .gatsby-image-wrapper {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .about_notes {
+        height: 100%;
+        padding: 1em 4em;
+
+        h1 {
+            margin-bottom: 2.5em;
+        }
+    }
+}
+
+.main .skill_wrapper {
+    .skill {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        li {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2em 1em;
+        }
+    }
+}
+
+.main .skill_wrapper .skills_container {
+    font-size: 1.25rem;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+
+    .skills_list {
+        padding: 1em 2em;
+        color: purple;
+        width: 40%;
+        background: rgba(214, 222, 222, 0);
+        outline: 0.2em solid #e898c5;
+        border-radius: 0.3em;
+        padding: 2em 1em;
+        box-shadow: 1px 0px 0px 0.15em #e898c5;
+
+        li {
+            display: flex;
+            align-items: center;
+            color: initial;
+        }
+
+        .list_item {
+            margin: 0;
+            padding: 0.75em;
+            background: hsla(204, 31%, 79%, 0.336);
+        }
+    }
+}
+
+.main .recommendations_wrapper {
+    position: relative;
+
+    .recom_container {
+        max-width: 40em;
+        margin: 1em auto;
+        margin-left: 5em;
+
+        .recoms > * + * {
+            margin-top: 1em;
+        }
+
+        .p-text {
+            border-left: 0.5em solid gray;
+            padding: 1em 3em 0.2em;
+            margin-bottom: 1.5em;
+        }
+
+        .link_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            span {
+                padding: 0 1em;
+                font-size: 1.1rem;
+
+                a {
+                    display: inline-block;
+                    padding: 0.2em 0.5em;
+                    color: purple;
+                    border: 1px solid currentColor;
+                    background: none;
+                    border-radius: 5px;
+                    transition: all 0.5s ease-in-out;
+                    text-decoration: none;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 46.875em) {
+    .main .about_wrapper {
+        display: initial;
+
+        .profile_img {
+            height: 20em;
+            width: 20em;
+            min-width: 14em;
+        }
+    }
+}
+
+@media screen and (max-width: 28.125em) {
+    .main .skill_wrapper .skills_container {
+        display: initial;
+        text-align: center;
+    }
+}

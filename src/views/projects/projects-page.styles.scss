@@ -1,0 +1,47 @@
+.projects_wrapper {
+    margin: 2em auto;
+    .projects_list {
+        padding: 1em 2em;
+        &>.projects_list_item+.projects_list_item {
+            border-top: 1px solid gray;
+        }
+        .projects_list_item {
+            .project_wrapper {
+                width: 70%;
+                margin: 0 auto;
+                padding: 2em 0em;
+                position: relative;
+
+                .caret {
+                    position: absolute;
+                    right: 5%;
+                    top: 20%;
+
+                    .btn {
+                        border: none;
+                        background: none;
+                        border-radius: 0;
+                        transition: all 0.5s ease-in;
+                        padding: 0.5em;
+                        cursor: pointer;
+
+                        &:focus, &:hover {
+                            background-color: rgba(179, 132, 179, 0.199);
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                div {
+                    display: inline-block;
+                    margin-left: 0.75em;
+                    &>span+span {
+                        margin-left: 0.25em;
+                    }
+                }
+            }
+        }
+    }
+}

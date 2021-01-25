@@ -1,0 +1,13 @@
+{
+    "debug.openExplorerOnEnd": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "editor.tabSize": 2,
+    "editor.autoIndent": "full",
+    "editor.cursorBlinking": "solid",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true
+}
